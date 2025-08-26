@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- font link -->
+    <link href="https://fonts.cdnfonts.com/css/trebuchet-ms-3" rel="stylesheet">
+    <!-- Project title -->
+    <title>Bootstrap-Explained</title>
+    <!-- Favorite icon -->
+    <link rel="shortcut icon" href="./assets/images/fav_jiametric.png" type="image/x-icon">
+    <!-- Bootstrap 5 CDN Link -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <!-- CSS File -->
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./table.css"> 
+    <!-- Font awesome icons CDN Link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+
+    <header><!-- parentContainer -->
+        <nav class="nav">
+            <div class="container-fluid">
+                <div class="navbar navbar-expand-lg navbar-light">
+                    <a class="navbar-brand" href="#home">
+                        <img src="./assets/images/logo_jiametric.png" alt="Logo" class="logo h-auto w-25">
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link active" href="#home">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#about">About</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#menu">Course</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#gallery">Gallery</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#contact">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+    </header>
+
+    <main><!-- parentContainer -->
+        <section class="htmlTable componentSpacing">
+            <div class="htmlTableContainer screenSize ">
+                <div class="htmlTableBody">
+                    <div class="htmlTableBlock">
+                        <div class="htmlTablebox">
+                            <h2> HTML 8 Steps and Their CSS </h2>
+
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th>Step</th>
+                                        <th>HTML Structure</th>
+                                        <th>CSS Class / Properties</th>
+                                        <th>Purpose</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>1</td>
+                                        <td>Parent Container</td>
+                                        <td><code>.header { <br>width:100%; <br>height:auto;}</code></td>
+                                        <td>Defines the main wrapper (like a section or header) that covers full width.
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>2</td>
+                                        <td>Component</td>
+                                        <td><code>.componentSpacing {<br> padding:4rem 0rem; }</code></td>
+                                        <td>Breathing Space Between Components</td>
+                                    </tr>
+                                    <tr>
+                                        <td>3</td>
+                                        <td>Component Container</td>
+                                        <td><code>.screenSize { <br>max-width:1200px; <br>margin:auto; }</code></td>
+                                        <td>Device Screen Size</td>
+                                    </tr>
+                                    <tr>
+                                        <td>4</td>
+                                        <td>Row</td>
+                                        <td><code>.grid { <br> display:grid; <br> grid-template-columns:1fr 1fr;}</code>
+                                        </td>
+                                        <td>Defines a row layout using grid with two equal columns.</td>
+                                    </tr>
+                                    <tr>
+                                        <td>5</td>
+                                        <td>Column</td>
+                                        <td><code>.dflex {<br> display:flex; <br> align-items:center; <br> justify-content:center; }</code>
+                                        </td>
+                                        <td>Arranges elements inside a column with flexible alignment.</td>
+                                    </tr>
+                                    <tr>
+                                        <td>6</td>
+                                        <td>Subcolumn</td>
+                                        <td><code>.subColumn { <br> width:100%; <br> height:100%; }</code></td>
+                                        <td>Ensures nested columns take full space inside the parent.</td>
+                                    </tr>
+                                    <tr>
+                                        <td>7</td>
+                                        <td>Content Container</td>
+                                        <td><code>h1 {  <br> font-family:'Nunito', sans-serif; <br> color:#000; <br>font-size:1.6rem; <br> font-weight:500;}</code>
+                                        </td>
+                                        <td>Applies text styling (font, size, spacing) to content inside the container.
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>8</td>
+                                        <td>Content</td>
+                                        <td><em>(Actual text, images, or media placed inside)</em></td>
+                                        <td>Final content shown to the user—styled by all the above steps.</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="htmlTable componentSpacing">
+            <div class="htmlTableContainer screenSize ">
+                <div class="htmlTableBody">
+                    <div class="htmlTableBlock">
+                        <div class="htmlTablebox">
+                            <h2>CSS and Bootstrap Classes Comparsion</h2>
+                            <table>
+                                <tr>
+                                    <th>Step</th>
+                                    <th>CSS</th>
+                                    <th>Bootstrap class</th>
+                                    <th>Example Syntax</th>
+                                </tr>
+                                <tr>
+                                    <td>1. Parent Container</td>
+                                    
+                                        <td><code>.header { <br>width:100%; <br>height:auto;}</code></td>
+                                    <td>w-100, h-auto</td>
+                                    <td><code>&lt;header class="w-100 h-auto"&gt;&lt;/header&gt;</code></td>
+                                </tr>
+                                <tr>
+                                    <td>2. Component</td>
+                                        <td><code>.componentSpacing {<br> padding:4rem 0rem; }</code></td>
+                                    <td>px-5</td>
+                                    <td><code>&lt;section class="px-5"&gt;&lt;/section&gt;</code></td>
+                                </tr>
+                                <tr>
+                                    <td>3. Component Container</td>
+                                        <td><code>.screenSize { <br>max-width:1200px; <br>margin:auto; }</code></td>
+                                    <td>container, container-fluid</td>
+                                    <td><code>&lt;div class="container"&gt;&lt;/div&gt;</code></td>
+                                </tr>
+                                <tr>
+                                    <td>4. Row</td>
+                                        <td><code>.grid { <br> display:grid; <br> grid-template-columns:1fr 1fr;}</code>
+                                    <td>row</td>
+                                    <td><code>&lt;div class="row"&gt;&lt;/div&gt;</code>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>5. Column</td>
+                                        <td><code>.dflex {<br> display:flex; <br> align-items:center; <br> justify-content:center; }</code>
+                                    <td>col-12 col-sm-12 col-md-12 col-lg-12</td>
+                                    <td><code>&lt;div class="col-12 col-sm-12 col-md-12 col-lg-12"&gt;&lt;/div&gt;</code>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>6. Subcolumn</td>
+                                        <td><code>.subColumn { <br> width:100%; <br> height:100%; }</code></td>
+                                    <td>d-flex flex-column justify-content-center align-items-center w-100 h-100</td>
+                                    <td><code>&lt;div class="d-flex flex-column justify-content-center align-items-center w-100 h-100"&gt;&lt;/div&gt;</code></td>
+                                </tr>
+                                <tr>
+                                    <td>7. Content Container</td>
+                                        <td><code>h1 {  <br> font-family:'Nunito', sans-serif; <br> color:#000; <br>font-size:1.6rem; <br> font-weight:500;}</code>
+                                    <td>fs-6, fw-bold, text-dark</td>
+                                    <td><code>&lt;p class="fs-6 fw-bold text-dark"&gt;Content&lt;/p&gt;</code></td>
+                                </tr>
+                                <tr>
+                                    <td>8. Content</td>
+                                    <td>Actual content (text/image)</td>
+                                    <td>text-center, img-fluid, etc.</td>
+                                    <td><code>&lt;img src="img.jpg" class="img-fluid" alt="..."&gt;</code></td>
+                                </tr>
+                            </table>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+       
+    </main>
+
+    <footer></footer>
+    <!-- Bootstrap 5 JavaScript CDN Link -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>
